@@ -10,7 +10,10 @@ const {
   BASE_URL,
   SESSION,
   SECURE_SESSION,
-  MUSIC_DIR
+  MUSIC_DIR,
+  PLEX_URL,
+  PLEX_TOKEN,
+  PLEX_LIBRARY_ID
 } = process.env
 
 const account = axios.create({
@@ -68,8 +71,21 @@ const copy = file => {
   extract.on('close', () => {
     console.log('Done extracting, deleting ZIP')
     fs.unlinkSync(file)
+    plexScan()
   })
 }
+
+const plexScan = () => {
+  if (PLEX_URL) {
+    const plexUpdate = `${PLEX_URL}/library/sections/${PLEX_LIBRARY_ID}/refresh?X-Plex-Token=${PLEX_TOKEN}`
+    console.log({ plexUpdate })
+    axios.get(plexUpdate).then(() => {
+      console.log('Triggered Plex scan')
+    })
+  }
+}
+
+plexScan()
 
 account.get('/yourmusic', {
   Accept: 'application/json, text/javascript, */*; q=0.01',
