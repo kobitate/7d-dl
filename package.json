@@ -1,0 +1,22 @@
+{
+  "name": "7d-dl",
+  "version": "1.0.0",
+  "description": "7Digital Downloader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "7digital"
+  ],
+  "author": "KaiTiggy <hi@kaitiggy.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "parse-http-header": "^1.0.1",
+    "progress": "^2.0.3",
+    "unzipper": "^0.10.11",
+    "utf8": "^3.0.0"
+  }
+}
