@@ -85,8 +85,6 @@ const plexScan = () => {
   }
 }
 
-plexScan()
-
 account.get('/yourmusic', {
   Accept: 'application/json, text/javascript, */*; q=0.01',
   'X-Requested-With': 'XMLHttpRequest'
