@@ -81,6 +81,8 @@ const plexScan = () => {
     console.log({ plexUpdate })
     axios.get(plexUpdate).then(() => {
       console.log('Triggered Plex scan')
+    }).catch(err => {
+      console.log('Error triggering Plex library refresh. Is your X-Plex-Token valid?')
     })
   }
 }
