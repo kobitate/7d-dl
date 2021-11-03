@@ -42,7 +42,7 @@ const download = id => account.get(`/download/release/${id}`, {
   responseType: 'stream'
 }).then(response => {
   let { filename } = parseHeader(response.headers['content-disposition'])
-  filename = filename.replaceAll('"', '')
+  filename = filename.replace(/\"/g, '')
   filename = utf8.decode(filename)
   console.log(`Downloading "${filename}"`)
 
@@ -95,6 +95,10 @@ account.get('/yourmusic', {
       // console.log(`Already downloaded ${release}`)
       return
     }
-    download(release)
+    download(release).catch(err => {
+      console.log('Error trying to download track', err)
+    })
   })
+}).catch(err => {
+  console.log('Error tring to access account', err)
 })
