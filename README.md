@@ -28,3 +28,11 @@ Automatic downloader for 7Digital
 2. Find the cookies titled `session` and `secureSession`, and copy them to your `.env` file
 
 ![7Digital Cookie](https://i.imgur.com/pddiuLy.png)
+
+## Notice
+
+This is an *unofficial product* simulating a user downloading releases directly from their 7Digital account. I am **not affiliated with 7Digital**. 
+
+Note that 7Digital does impose an un-published download limit per release. I recommend only downloading a release once. 7d-dl keeps a local cache of what has already been downloaded. When migrating to a new machine, I recommend copying `cache.json` to ensure your already-downloaded releases are not downloaded again.
+
+I am not responsible for any repercussions (if any) from using this code.
