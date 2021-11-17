@@ -12,7 +12,7 @@
   "author": "KaiTiggy <hi@kaitiggy.com>",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "dotenv": "^10.0.0",
     "parse-http-header": "^1.0.1",
     "progress": "^2.0.3",
