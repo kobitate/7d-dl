@@ -1,6 +1,6 @@
 # 7d-dl
 
-Automatic downloader for 7Digital
+An unofficial downloader for 7Digital. Automatically add your music purchases to your music library. Works with Plex to trigger a library scan upon completion.
 
 ![Built with Love](https://img.shields.io/badge/built%20with-%E2%99%A5-blue?style=for-the-badge&labelColor=e26e32&color=d05e30) ![Does Not Contain Tree Nuts](https://img.shields.io/badge/does%20not%20contain-tree%20nuts-blue?style=for-the-badge&labelColor=3ec4f0&color=3a9ad2) [![code style - standard](https://img.shields.io/badge/code%20style-standard-green?style=for-the-badge&labelColor=90c96d&color=439b5e)](https://standardjs.com/) [![Contributor Covenant](https://img.shields.io/badge/contributor%20covenant-2.1-violet?style=for-the-badge&labelColor=892aa1&color=5d0f70)](https://github.com/kobitate/7d-dl/blob/main/CODE_OF_CONDUCT.md)
 
