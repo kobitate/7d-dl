@@ -2,6 +2,8 @@
 
 Automatic downloader for 7Digital
 
+![Built with Love](https://img.shields.io/badge/built%20with-%E2%99%A5-blue?style=for-the-badge&labelColor=e26e32&color=d05e30) ![Does Not Contain Tree Nuts](https://img.shields.io/badge/does%20not%20contain-tree%20nuts-blue?style=for-the-badge&labelColor=3ec4f0&color=3a9ad2) [![code style - standard](https://img.shields.io/badge/code%20style-standard-green?style=for-the-badge&labelColor=90c96d&color=439b5e)](https://standardjs.com/)
+
 ## Usage
 
 1. Clone or download this repo
