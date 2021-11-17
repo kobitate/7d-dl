@@ -9,7 +9,7 @@
   "keywords": [
     "7digital"
   ],
-  "author": "KaiTiggy <hi@kaitiggy.com>",
+  "author": "Kobi Tate <kobi@kobitate.com>",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.2",
