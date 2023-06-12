@@ -24,14 +24,16 @@ const account = axios.create({
   withCredentials: true
 })
 
+const cacheFile = path.resolve((MUSIC_DIR || 'downloads'), '7d-dl.cache.json')
+
 let cache
 
 try {
-  cache = fs.readFileSync('cache.json')
+  cache = fs.readFileSync(cacheFile)
   cache = JSON.parse(cache)
 } catch (e) {
   cache = { downloaded: [] }
-  fs.writeFileSync('cache.json', JSON.stringify(cache))
+  fs.writeFileSync(cacheFile, JSON.stringify(cache))
 }
 
 if (!fs.existsSync('./downloads')) {
